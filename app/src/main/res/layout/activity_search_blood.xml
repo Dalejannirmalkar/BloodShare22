@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.myapp.nirmalkar.dalejan.bloodshare2.SearchBlood">
+    <TextView
+        android:id="@+id/kkk1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:textColor="#008000"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="65dp"
+        android:text="Hello"
+        />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp" />
+
+
+    <Button
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsearch15"
+        android:background="@drawable/button_style"
+        android:textSize="17sp"
+        android:width="80dp"
+        android:height="30dp"
+        android:text="Search With in 15km"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsearch10"
+        android:background="@drawable/button_style"
+        android:textSize="17sp"
+        android:width="80dp"
+        android:height="30dp"
+        android:text="Search With in 10km"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsearch20"
+        android:background="@drawable/button_style"
+        android:textSize="17sp"
+        android:width="80dp"
+        android:height="30dp"
+        android:text="Search With in 20km"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsearch60"
+        android:background="@drawable/button_style"
+        android:textSize="17sp"
+        android:width="80dp"
+        android:height="30dp"
+        android:text="Search With in 60km"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

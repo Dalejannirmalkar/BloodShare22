@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15364412819",
+    "project_id": "raktdoot-150616"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15364412819:android:d9eb950a5470f9e2",
+        "android_client_info": {
+          "package_name": "main.myapp.nirmalkar.dalejan.bloodshare2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15364412819-f5pfbul32iesl1ksqkimtapd6hmntr1d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "main.myapp.nirmalkar.dalejan.bloodshare2",
+            "certificate_hash": "096B8FA490D66AA3E750A6451B36260AFFB15FC7"
+          }
+        },
+        {
+          "client_id": "15364412819-bakevu7qji0kmcgdtb9r81g471ese35j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxB1-gspyApViY-iuQqeV1YwcEXpiGAyM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

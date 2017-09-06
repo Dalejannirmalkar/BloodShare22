@@ -1,0 +1,68 @@
+//noinspection GradleDependency
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'bloodshare'
+            keyPassword 'csvtuapp'
+            storeFile file('C:/Users/RACHOLSAN RAJ NIRMAL/Desktop/Projectsall/raktdan/bloodsharekey.jks')
+            storePassword 'csvtuapp'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "main.myapp.nirmalkar.dalejan.bloodshare2"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 10
+        versionName "10"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            zipAlignEnabled true
+            debuggable false
+        }
+        debug {
+            debuggable true
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.googlecode.json-simple:json-simple:1.1'
+    compile 'com.android.support:multidex:1.0.1'
+    //noinspection GradleCompatible,GradleCompatible
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    //noinspection GradleCompatible,GradleCompatible
+    compile 'com.android.support:design:25.1.1'
+    //noinspection GradleCompatible,GradleCompatible
+    compile 'com.android.support:gridlayout-v7:25.1.1'
+    compile 'junit:junit:4.12'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'com.google.android.gms:play-services:10.0.1'
+    compile('com.google.api-client:google-api-client-android:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile('com.google.apis:google-api-services-gmail:v1-rev53-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+}
+apply plugin: 'com.google.gms.google-services'

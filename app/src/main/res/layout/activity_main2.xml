@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="main.myapp.nirmalkar.dalejan.bloodshare2.Main2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout android:id="@+id/linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/texte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#008000"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Steps for Registration :"/>
+        <TextView
+            android:id="@+id/texttt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Please send the following information to this GMAIL id :"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:text="1.NAME"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:text="2.GMAIL ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:textColor="#000000"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:text="3.MOBILE NO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="26dp"
+            android:textColor="#000000"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:text="4.BLOOD GROUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:textColor="#000000"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="@string/your_string_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/textView5"
+            android:layout_marginBottom="13dp"
+            android:layout_alignBottom="@+id/texttt"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
